@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>GeoJSON</title>
+    <link href="http://openlayers.org/en/v3.13.0/css/ol.css" type="text/css">
+    <script src="http://openlayers.org/en/v3.13.0/build/ol.js"></script>
+    {% load staticfiles %}
+	
+	<link rel="stylesheet" type="text/css" href="{% static 'map/style.css' %}" />
+  </head>
+  <body>
+    <div id="map" >
+    <div id="mouse_p"></div>
+    
+	<div id="mouse_s"></div></div>
+	
+	<div id="demo"></div>
+	<button onclick="getfeatures()">click me</button>
+	<select id="type">
+		<option value="None">Modify</option>
+		<option value="Point">Point</option>
+		<option value="LineString">LineString</option>
+		<option value="Polygon">Polygon</option>
+	</select>
+<script src="{% static 'map/style.js' %}"></script>
+<script src="{% static 'map/script.js' %}"></script>
+  </body>
+</html>
